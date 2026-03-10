@@ -6,5 +6,5 @@ export const initialSignContext: SignedModel = {
   tel: 4554544,
   country: "",
   msg: "",
-  date: Date.now(),
+  date: "",
 };
