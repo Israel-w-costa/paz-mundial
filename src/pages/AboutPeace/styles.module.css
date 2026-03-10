@@ -1,0 +1,7 @@
+.AboutPeace {
+  padding: 4rem;
+}
+
+.AboutPeace strong:nth-child(1) {
+  color: blue;
+}

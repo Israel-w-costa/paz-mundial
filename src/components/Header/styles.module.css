@@ -1,0 +1,93 @@
+.container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 3rem;
+  z-index: 1;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.header svg {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  padding: 0.7rem;
+  border-radius: 50%;
+  color: white;
+  width: 3.5rem;
+  height: 3.5rem;
+  box-shadow: 0 0.25rem 0.625rem rgba(0, 0, 0, 0.15);
+}
+
+.header h2 {
+  margin: 0;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #1e3a8a;
+}
+
+.header span {
+  width: 100%;
+  font-size: 0.9rem;
+  color: #3b82f6;
+  margin-top: -0.3125rem;
+  margin-left: 4.6rem;
+}
+
+.link {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+}
+
+.link a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: #2563eb;
+  font-weight: 500;
+  padding: 0.6rem 1rem;
+  border-radius: 62.5rem;
+  transition: 0.3s ease;
+}
+
+.link a:hover {
+  background-color: #e0edff;
+  transform: translateY(-0.125rem);
+}
+
+.link a.active {
+  background: linear-gradient(135deg, #3b82f6, #2563eb);
+  color: white;
+  box-shadow: 0 0.25rem 0.75rem rgba(37, 99, 235, 0.4);
+}
+
+.link svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+@media screen and (max-width: 40.625rem) {
+  .header h2,
+  .header span {
+    display: none;
+  }
+
+  .link a {
+    padding: 0rem;
+  }
+
+  .link a span {
+    display: none;
+  }
+}

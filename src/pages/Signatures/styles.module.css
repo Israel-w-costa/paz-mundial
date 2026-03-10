@@ -1,0 +1,85 @@
+.container {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.title {
+  padding: 1rem;
+}
+
+.title strong {
+  color: rgb(53, 53, 249);
+}
+
+.paragraph {
+  padding: 1.5rem;
+}
+
+.containerInfo {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.containerInfo div {
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  padding: 1.2rem;
+  border: 0.1rem solid rgb(182, 182, 182);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+.containerInfo div:nth-child(1) {
+  background-color: rgb(53, 53, 249);
+  color: white;
+}
+
+.containerInfo div span:nth-child(1) {
+  font-size: 2.5rem;
+}
+
+.containerBanner {
+  background-color: #eaf4ff;
+}
+
+.containerBanner svg {
+  color: #2563eb;
+  width: 5rem;
+  height: 5rem;
+}
+.buttonContainer button {
+  min-width: auto;
+  margin: 0;
+  padding: 1rem;
+}
+
+.buttonContainer button svg {
+  width: 2rem;
+  height: 2rem;
+}
+
+.responsiveTable {
+  overflow-x: auto;
+  border-radius: 0.8rem;
+}
+
+.responsiveTable table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.responsiveTable th {
+  background-color: #2563eb;
+}
+
+.responsiveTable td {
+  background-color: white;
+}
+
+.responsiveTable th,
+.responsiveTable td {
+  border-bottom: 0.2rem solid var(--gray-700);
+  text-align: left;
+  padding: 1rem;
+}

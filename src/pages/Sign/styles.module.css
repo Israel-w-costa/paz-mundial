@@ -1,0 +1,120 @@
+.signatureSection {
+  padding: 6rem 0;
+}
+
+.signatureContent strong {
+  color: rgb(53, 53, 249);
+}
+
+.signatureGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.signatureTitle {
+  font-size: 3rem !important;
+  font-weight: 800;
+  margin-bottom: 1.5rem;
+  color: #0f172a;
+}
+
+.signatureDescription {
+  font-size: 1.4rem;
+  line-height: 1.7;
+  color: #475569;
+  margin-bottom: 2.5rem;
+}
+
+.signatureBenefits {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.benefitItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  border-radius: 1rem;
+  padding: 1.5rem;
+}
+
+.benefitIcon {
+  width: 28px;
+  height: 28px;
+  padding: 0.6rem;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.benefitItem:nth-child(1) {
+  background-color: #eaf4ff;
+}
+
+.benefitItem:nth-child(1) svg {
+  background-color: #d4e7fc;
+  color: blue;
+  border-radius: 0.8rem;
+}
+
+.benefitItem:nth-child(2) {
+  background-color: #fef3c7;
+  border: 0.1rem solid #b45309;
+}
+
+.benefitItem:nth-child(2) svg {
+  background-color: #fbdc5e;
+  color: #ffffff;
+  border-radius: 0.8rem;
+}
+
+.benefitItem h3 {
+  font-size: 1.6rem;
+  margin-bottom: 0.3rem;
+  color: #0f172a;
+}
+
+.benefitItem span {
+  font-size: 1.4rem;
+  color: #64748b;
+}
+
+/* ===== FORMULÁRIO ===== */
+
+.signatureForm {
+  background-color: #ffffff;
+  padding: 3rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+  transition: 0.3s ease;
+}
+
+.signatureForm:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+/* ===== RESPONSIVO ===== */
+
+@media (max-width: 1024px) {
+  .signatureGrid {
+    grid-template-columns: 1fr;
+    gap: 3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .signatureSection {
+    padding: 4rem 1.5rem;
+  }
+
+  .signatureTitle {
+    font-size: 2.2rem;
+  }
+
+  .signatureDescription {
+    font-size: 1.2rem;
+  }
+}

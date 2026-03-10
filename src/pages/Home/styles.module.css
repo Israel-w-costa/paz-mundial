@@ -1,0 +1,160 @@
+.hero {
+  text-align: center;
+  padding: 12rem 2rem;
+  background: linear-gradient(135deg, #1e3a8a, #2563eb);
+  color: white;
+  margin-bottom: 0;
+}
+
+.hero h1 {
+  margin-bottom: 1.5rem;
+}
+
+.hero strong {
+  color: #fb923c;
+}
+
+.description {
+  line-height: 2;
+  padding: 1rem;
+}
+
+.heroActions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.usersIcon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+
+  background-color: var(--white);
+  width: 25rem;
+  margin: 1rem auto;
+  padding: 1rem 1.5rem;
+
+  border-radius: 1rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+.usersIcon svg {
+  width: 40px;
+  height: 40px;
+
+  padding: 0.6rem;
+  border-radius: 0.7rem;
+
+  background-color: #fb923c;
+  color: white;
+}
+
+.usersInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.usersInfo span:first-child {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #1f2937;
+}
+
+.usersInfo span:last-child {
+  font-size: 1.4rem;
+  color: #6b7280;
+}
+
+.conflictsHeader {
+  padding: 4rem;
+}
+
+.conflictsHeader {
+  text-align: center;
+}
+
+.conflictsTitle {
+  font-size: 3rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.conflictsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2rem;
+}
+
+.conflictCard {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.06);
+  transition: all 0.3s ease;
+}
+
+.conflictCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.1);
+}
+
+.conflictCard h3 {
+  margin-bottom: 0.5rem;
+}
+
+.conflictCard p {
+  font-size: 1.5rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.missionSection {
+  padding: 6rem 2rem;
+  background: #ffffff;
+}
+
+/* GRID PRINCIPAL */
+.missionContent {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.missionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1.5rem;
+}
+
+.missionImageWrapper {
+  width: 100%;
+}
+
+.missionImage {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  object-fit: cover;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+.container {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.title {
+  padding: 1rem;
+}
+
+.title strong {
+  color: rgb(53, 53, 249);
+}
+
+.paragraph {
+  padding: 1.5rem;
+}
