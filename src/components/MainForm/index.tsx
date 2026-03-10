@@ -11,11 +11,11 @@ import Container from "../Container";
 import DefaultInput from "../DefaultInput";
 import styles from "./styles.module.css";
 import DefaultButton from "../DefaultButton";
-import { useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useSignContext } from "../../contexts/SignContext/useSignContext";
 
 export default function MainForm() {
-  const { state, setState } = useSignContext();
+  const { setState } = useSignContext();
 
   const name = useRef<HTMLInputElement>(null);
   const mail = useRef<HTMLInputElement>(null);
@@ -57,11 +57,12 @@ export default function MainForm() {
         date: dataFormat,
       },
     ]);
-    console.log(state);
+    name.current.value = "";
+    mail.current.value = "";
+    tel.current.value = "";
+    country.current.value = "";
+    msg.current.value = "";
   }
-  useEffect(() => {
-    console.log(state);
-  }, [state]);
 
   return (
     <>
